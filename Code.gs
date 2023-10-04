@@ -1,8 +1,3 @@
-/*
-# CREATED BY: BPWEBS.COM
-# URL: https://www.bpwebs.com
-*/
-
 function doGet() {
   return HtmlService.createTemplateFromFile('index').evaluate();
 }
@@ -10,7 +5,7 @@ function doGet() {
 //GET DATA FROM GOOGLE SHEET AND RETURN AS AN ARRAY
 function getData() {
   var spreadSheetId = "1qyh90LBqrA2GSKr-d9snrkqx-UgeQFHJo-vKLqSmEH8"; //CHANGE
-  var dataRange = "Data!A2:F"; //CHANGE
+  var dataRange = "Data!A2:H"; //CHANGE
 
   var range = Sheets.Spreadsheets.Values.get(spreadSheetId, dataRange);
   var values = range.values;
