@@ -9,7 +9,7 @@ function doGet() {
 
 //GET DATA FROM GOOGLE SHEET AND RETURN AS AN ARRAY
 function getData() {
-  var spreadSheetId = "1wS9j4uGJquZCwri6ww4wEd6O-uyWToCS58gjXOwcwWc"; //CHANGE
+  var spreadSheetId = "1qyh90LBqrA2GSKr-d9snrkqx-UgeQFHJo-vKLqSmEH8"; //CHANGE
   var dataRange = "Data!A2:F"; //CHANGE
 
   var range = Sheets.Spreadsheets.Values.get(spreadSheetId, dataRange);
